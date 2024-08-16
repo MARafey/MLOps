@@ -17,7 +17,7 @@ def change(dollar):
 
 @app.route('/', methods=['GET'])
 def hello():
-    return "Hello World! I can make changes at route : /change"
+    return "Hello World! I can make changes at route."
 
 if __name__ == '__main__':
     app.run(debug=True)
