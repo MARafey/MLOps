@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 @app.route('/change', methods=['POST'])
-def change(dollar):
+def change(dollar=100):
     # finding the number of coins
     dollar = request.json['dollar']
     dollar = int(dollar)
